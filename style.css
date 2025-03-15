@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+}
+
+.card h1 {
+    font-size: 2rem;
+    color: #2575fc;
+    font-weight: bold;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.option-btn {
+    font-size: 1rem;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #2575fc;
+    color: #fff;
+}
+
+.feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#nextBtn {
+    display: none;
+    font-size: 1rem;
+}
+
