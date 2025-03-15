@@ -101,7 +101,7 @@ function checkAnswer(selectedIndex) {
 function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex >= questions.length) {
-        currentQuestionIndex = 0; // Reset to the first question
+        currentQuestionIndex = 0; 
     }
     loadQuestion();
 }
