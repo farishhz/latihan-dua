@@ -59,19 +59,19 @@ function loadQuestion() {
     const feedbackElement = document.getElementById("feedback");
     const nextButton = document.getElementById("nextBtn");
 
-    // Reset feedback and next button
+   
     feedbackElement.textContent = "";
     feedbackElement.style.color = "";
     nextButton.style.display = "none";
 
-    // Load current question
+   
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
 
-    // Clear previous options
+   
     optionsElement.innerHTML = "";
 
-    // Load options
+    
     currentQuestion.options.forEach((option, index) => {
         const button = document.createElement("button");
         button.textContent = `${String.fromCharCode(65 + index)}. ${option}`;
@@ -94,7 +94,7 @@ function checkAnswer(selectedIndex) {
         feedbackElement.style.color = "red";
     }
 
-    // Show next button
+    
     nextButton.style.display = "block";
 }
 
@@ -106,5 +106,5 @@ function nextQuestion() {
     loadQuestion();
 }
 
-// Load the first question
+
 window.onload = loadQuestion;
